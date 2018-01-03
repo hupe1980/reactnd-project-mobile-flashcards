@@ -11,5 +11,8 @@ This is the final assessment project for Udacity's React Native course. The app 
 - Run `yarn start`or `npm start`
 - Press i to open the iOS emulator (only tested on ios (iphone 7))
 
+## Live Demo
+For a demo, check out https://expo.io/@hupe/mobile-flashcards
+
 ## License
 The MIT License (MIT)
