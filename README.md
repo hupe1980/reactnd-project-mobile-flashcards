@@ -4,6 +4,8 @@ This is the final assessment project for Udacity's React Native course. The app 
 - Add flashcards to those decks
 - Take quizzes on those decks
 
+This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
+
 ## Installation
 
 - Download or clone this repository
