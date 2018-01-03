@@ -1,4 +1,4 @@
-import { ADD_CARD, ADD_DECK } from '../actions';
+import { ADD_CARD, ADD_DECK } from '../actions/types';
 
 function addCard(state, action) {
   const { payload } = action;

@@ -1,4 +1,4 @@
-import { START_QUIZ, NEXT_CARD, RESTART_QUIZ } from '../actions';
+import { START_QUIZ, NEXT_CARD, RESTART_QUIZ } from '../actions/types';
 
 const initialState = {
   cards: [],
