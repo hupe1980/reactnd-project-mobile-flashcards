@@ -14,6 +14,7 @@ const propTypes = {
   reset: PropTypes.func.isRequired,
   handleSubmit: PropTypes.func.isRequired,
   navigation: PropTypes.shape({
+    goBack: PropTypes.func,
     navigate: PropTypes.func,
     state: PropTypes.shape({
       params: PropTypes.shape({
@@ -54,6 +55,11 @@ class AddCard extends Component {
       deckId, cardId, question, answer,
     }));
     this.props.reset();
+    this.toDeckDetail();
+  }
+
+  toDeckDetail() {
+    this.props.navigation.goBack();
   }
 
   render() {

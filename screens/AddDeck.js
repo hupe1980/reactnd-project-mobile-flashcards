@@ -44,11 +44,11 @@ class AddDeck extends Component {
     const deckId = uuid();
     this.props.dispatch(addDeck({ deckId, title }));
     this.props.reset();
-    this.toList();
+    this.toDeckDetail(deckId, title);
   }
 
-  toList() {
-    this.props.navigation.navigate('DeckList');
+  toDeckDetail(deckId, title) {
+    this.props.navigation.navigate('DeckDetail', { deckId, title });
   }
 
   render() {
