@@ -6,7 +6,7 @@ import { Divider, Text } from 'react-native-elements';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import { getDeckById } from '../reducers';
-import * as actions from '../actions';
+import { startQuiz } from '../actions';
 import {
   createPlatformStyle,
   clearLocalNotification,
@@ -95,4 +95,4 @@ function mapStatToProps(state, ownProps) {
   };
 }
 
-export default connect(mapStatToProps, actions)(DeckDetail);
+export default connect(mapStatToProps, { startQuiz })(DeckDetail);

@@ -6,7 +6,7 @@ import { Divider, Text } from 'react-native-elements';
 
 import Button from '../components/Button';
 import { getQuizWithCurrentCard } from '../reducers';
-import * as actions from '../actions';
+import { nextCard, restartQuiz } from '../actions';
 import { createPlatformStyle } from '../utils/helpers';
 import { success, danger, light } from '../utils/colors';
 import * as customPropTypes from '../utils/customPropTypes';
@@ -17,11 +17,12 @@ const propTypes = {
   cardCount: PropTypes.number.isRequired,
   restartQuiz: PropTypes.func.isRequired,
   showResult: PropTypes.bool.isRequired,
-  current: PropTypes.number.isRequired,
+  current: PropTypes.number,
   currentCard: customPropTypes.card,
 };
 
 const defaultProps = {
+  current: null,
   currentCard: null,
 };
 
@@ -130,4 +131,4 @@ function mapStatToProps(state) {
   };
 }
 
-export default connect(mapStatToProps, actions)(Quiz);
+export default connect(mapStatToProps, { nextCard, restartQuiz })(Quiz);
